@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+     <title>house homework</title>
+</head>
+<style type="text/css">
+
+     body{
+          height: 100vh;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .container{
+          width: 500px;
+          height: 100px;
+          background: #f4f4f4;
+     }
+
+     .div1{
+          width: 230px;
+          height: 100px;
+          background: linear-gradient(black, silver);
+          border: 1px solid black;
+          box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+
+          perspective: 600px;
+
+          margin: auto;
+          position: relative;
+     }
+
+     .div2{
+          width: 250px;
+          height: 100px;
+          background: linear-gradient(black, silver);
+          border: 1px solid black;
+          box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+
+          position: absolute;
+          top: -80%;
+          left: -30px;
+          padding: 20px;
+          transform: rotateX(45deg);
+
+          z-index: 1;
+     }
+
+     .doors{
+          width: 100px;
+          height: 100px;
+          background: linear-gradient(silver, grey);
+
+          margin: auto;
+          display: flex;
+
+          position: relative;
+          perspective: 300px;
+     }
+
+     .div3{
+          width: 50px;
+          height: 100px;
+          background-color: #f4f4f4;
+          border: 1px solid black;
+          box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+
+          transform-origin: left center;
+          transition: all .5s ease;
+     }
+
+     .div3:hover{
+          transform: rotateY(-60deg);
+     }
+
+     .div4{
+          width: 50px;
+          height: 100px;
+          background: #f4f4f4;
+          border: 1px solid black;
+          box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+
+          transform: rotateY(60deg);
+          transform-origin: right center;
+          transition: all .5s ease;
+     }
+
+     .div4:hover{
+          transform: rotate(0deg);
+     }
+</style>
+<body>
+     <div class="container">
+
+          <div class="div1">
+               <div class="div2"></div>
+               <div class="doors">
+                    <div class="div3"></div>
+                    <div class="div4"></div>
+               </div>
+          </div>
+
+     </div>
+</body>
+</html>

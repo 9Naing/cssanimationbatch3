@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+     <title>Transform Origin</title>
+</head>
+
+<style type="text/css">
+     body{
+          height: 100vh;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     img{
+          width: 300px;
+          height: 200px;
+          cursor: pointer;
+
+          transition: transform 2s;
+          /* transform-origin: top; left right bottom */
+
+          transform-origin:  left top;
+          /* left bottom
+          right top
+          right bottom 
+          left center*/
+
+          /* transform-origin: 0; */
+          /* transform-origin: 50%; */
+          /* transform-origin: 100%; */
+          /* transform-origin: 150px; */
+
+          /* x, y */
+          /* transform: 0; */
+          /* transform-origin: 0 0; */
+          /* transform-origin: 0 50%; */
+          /* transform-origin: 50% 50%; */
+          /* transform-origin: 30% 50%; */
+          /* transform-origin: 150px 100px; */
+     }
+
+     img:hover{
+          transform: rotate(45deg);
+     }
+</style>
+
+<body>
+     <div>
+          <img src="./img/dog.jpg" alt="dog" />
+     </div>
+</body>
+</html>

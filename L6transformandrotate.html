@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+     <title>transformwithrotate</title>
+     <style type="text/css">
+
+          .container{
+               width: 1000px;
+               background: grey;
+          }
+
+          .container .move{
+               width: 150px;
+               height: 60px;
+               background-color: red;
+               color: #fff;
+               font-size: 20px;
+               margin: 20px 0;
+
+               text-align: center;
+               line-height: 60px;
+          }
+
+          #rotate:hover{
+               /* transform: rotate(45deg); */
+               transform: rotate(-45deg);
+          }
+
+          #rotatex:hover{
+               /* transform: rotateX(45deg); */
+               transform: rotate(-45deg);
+          }
+
+          #rotatey:hover{
+               /* transform: rotate(45deg); */
+               transform: rotate(-45deg);
+          }
+
+          img{
+               width: 300px;
+               display: block;
+
+               margin: auto;
+               transition: transform 1s;
+          }
+
+          img:hover{
+               /* transform: rotate(45deg); */
+               /* transform: rotate(-45deg); */
+
+               /* transform: rotate( 1turn); */
+               /* transform: rotate(-1.5turn); */
+
+               /* 400grad = 360deg */
+               /* transform: rotate(400grad); */
+               transform: rotate(-300grad);
+          }
+
+     </style>
+</head>
+<body>
+     <div class="container">
+          <div id="rotate" class="move">Rotate Me</div>
+     </div>
+
+     <div class="container">
+          <div id="rotatex" class="move">Rotate X</div>
+     </div>
+
+     <div class="container">
+          <div id="rotatey" class="move">Rotate Y</div>
+     </div>
+
+     <hr>
+
+     <img src="./img/dog.jpg" alt="photoofdogs">
+</body>
+</html>
