@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
+
+*{
+    perspective: 200px;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    /* background-color: #f4f4f4; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    background: transparent;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.box .div1{
+    width: 83.3px;
+    height: 83.3px;
+    background-color: tomato;
+    border: 1px solid #000;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.box:hover .div1{
+    left: 47%;
+    background-color: transparent;
+}
+
+.div1::before{
+    content: ' ';
+    width:  83.3px;
+    height: 43.3px;
+    background: green;
+    border: 1px solid #000;
+
+    position: absolute;
+    top: -48.3px;
+    left: 22px;
+
+    transform: skewX(-45deg);
+    transition: all 0.5s ease;
+}
+
+.div1::after{
+    content: ' ';
+    width: 43.3px;
+    height: 83.3px;
+    background-color: orange;
+    border: 1px solid #000;
+
+    position: absolute;
+    top: -25px;
+    right: -48.3px;
+
+    transform: skewY(-45deg);
+    transition: all 0.5s ease;
+}
+
+.box:hover .div1::after{
+    right: -55.3px;
+    background-color: transparent;
+}
+
+.box:hover .div1::before{
+    top: -55.3px;
+    background-color: transparent;
+}
