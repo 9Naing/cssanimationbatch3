@@ -18,6 +18,8 @@
                font-size: 40px;
                border: 5px solid#000;
 
+               display: block;
+               margin-bottom: 20px ;
                padding: 40px 80px;
                position: relative;
 
@@ -52,10 +54,71 @@
           a:active::before{
                content: "Thank You";
           }
+
+          button{
+               background: none;
+               font-size: 40px;
+               border: 5px solid #000;
+               cursor: pointer;
+
+               padding: 40px 80px;
+
+               position: relative;
+          }
+
+          button::before{
+               content: 'Hover Me';
+               width: 100%;
+               height: 100%;
+               background-color: steelblue;
+
+               position: absolute;
+               top: 0;
+               left: 0;
+
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               transition: transform 0.5s;
+          }
+
+          button::after{
+               content: "Press Me";
+               width: 100%;
+               height: 100%;
+               background-color: yellow;
+
+               position: absolute;
+               top: 0;
+               left: 0;
+
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               transform: scale(0);
+               transition: transform 0.5s;
+          }
+
+          button:hover::before{
+               transform: scale(0);
+          }
+
+          button:hover::after{
+               transform: scale(1);
+          }
+
+          button:active::after{
+               content: 'Thank You';
+          }
      </style>
 </head>
 
 <body>
-     <a href="#">Hover Me</a>
+     <div>
+          <a href="#">Hover Me</a>
+          <button type="button">Hover Me</button>
+     </div>
 </body>
 </html>
