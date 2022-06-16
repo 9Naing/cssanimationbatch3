@@ -126,6 +126,7 @@
 
                transition: transform 0.5s;
 
+
                z-index: -1;
          }
 
@@ -140,6 +141,14 @@
 
          button:hover::after{
               transform: translateX(-50%);
+         }
+
+         button:active::before{
+              content: 'you';
+         }
+
+         button:active::after{
+              content: 'Thank';
          }
      </style>
 </head>

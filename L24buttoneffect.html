@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+     <title>button Effect</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style type="text/css">
+          body{
+               font-family: sans-serif;
+               height: 100vh;
+
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+
+          .btn{
+               background: none;
+               color: #000;
+               font-weight: 700;
+               letter-spacing: 1px;
+               text-transform: uppercase;
+               padding: 25px 80px;
+               margin: 20px;
+               border: none;
+
+               cursor: pointer;
+
+               position: relative;
+          }
+
+          .btn::before{
+               content: ' ';
+               font-family: "Font Awesome 5 Free";
+               width: 60px;
+               height: 100%;
+               background-color: green;
+               font-size: 150%;
+
+               position: absolute;
+               top: 0;
+               left: 0;
+
+               line-height: 3;
+          }
+
+          .download-btn::before{
+               content: '\f103';
+               background-color: orange;
+          }
+
+          .download-btn{
+               background-color: ;
+          }
+
+          .download-btn:hover{
+
+          }
+
+          .download-btn:active{
+               
+          }
+     </style>
+</head>
+<body>
+     
+
+     <button type="button" class="btn download-btn">Download Now</button>
+     <button type="button" class="btn upload-btn">Upload Now</button>
+
+</body>
+</html>
