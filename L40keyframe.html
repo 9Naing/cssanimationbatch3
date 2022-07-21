@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+     <title>Keyframe</title>
+
+     <style type="text/css">
+
+          body{
+               padding: 0;
+               margin: 0;
+          }
+
+          div{
+               width: 150px;
+               height: 150px;
+               background-color: steelblue;
+               
+               /* animation: myani 3s linear;
+               animation-fill-mode: forwards; */
+               /* animation-iteration-count: infinite; */
+               /* animation-iteration-count: 3; */
+               
+               /* animation-timing-function: linear; */
+               /* ease in; */
+               /* ease out  */
+               /* ease-in-out */
+
+               /* animation-direction: normal; */
+               /* animation-direction: reverse; */
+               
+               /* animation-iteration-count: infinite; */
+               /* animation-direction: alternate; */
+               /* animation-direction: alternate-reverse; */
+
+               animation: myani 3s infinite linear alternate;
+          }
+
+          @keyframes myani{
+               0%{
+                    transform: translate(0px);
+               }
+
+               50%{
+                    transform: translate(800px);
+               }
+
+               100%{
+                    transform: translate(800px, 800px);
+               }
+          }
+  
+
+     </style>
+</head>
+<body>
+     <div></div>
+</body>
+</html>

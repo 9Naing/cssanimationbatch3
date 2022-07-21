@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+     <title>Keyframe</title>
+
+     <style type="text/css">
+
+          body{
+               padding: 0;
+               margin: 0;
+          }
+
+          div{
+               width: 150px;
+               height: 150px;
+               background-color: steelblue;
+
+               /* animation-name: myani;
+               animation-duration: 3s;
+
+               animation-fill-mode: forwards;
+               animation-fill-mode: backwards;
+
+               animation-delay: 3s; */
+          }
+
+          .box2{
+               width: 150px;
+               height: 150px;
+               background-color: orange;
+               
+               /* animation: myani2 3s linear;
+               animation-fill-mode: forwards; */
+          }
+
+          .box3{
+               width: 150px;
+               height: 150px;
+               background-color: violet;
+
+               position: relative;
+               
+               animation-name: myani3;
+               animation-duration: 3s;
+
+          }
+
+          @keyframes myani{
+               0%{
+                    transform: translate(0px);
+               }
+
+               50%{
+                    transform: translateX(800px);
+               }
+
+               100%{
+                    transform: translateX(800px) translateY(800px);
+               }
+          }
+
+          @keyframes myani2{
+               0%{
+                    background-color: violet;
+                    transform: translate(0);
+               }
+
+               25%{
+                  background-color: orange;  
+                  transform: translate(300px);
+               }
+
+               50%{
+                    background-color: blue;
+                    transform: translate(300px, 300px);
+               }
+
+               75%{
+                    background-color: steelblue;
+                    transform: translate(0px, 300px);
+               }
+          }
+
+          @keyframes myani3{
+               12.5%{
+                    top: 100px;
+               }
+
+               25%{
+                    top: -100px;
+               }
+
+               37.5%{
+                    top: 50px;
+               }
+
+               50%{
+                    top: -50px;
+               }
+
+               62.5%{
+                    top: 25px;
+               }
+
+               75%{
+                    top: -25px;
+               }
+          }
+
+     </style>
+</head>
+<body>
+     <div class="box1"></div>
+     <hr>
+     <div class="box2"></div>
+     <hr>
+     <div class="box3"></div>
+</body>
+</html>
